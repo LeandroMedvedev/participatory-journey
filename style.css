@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@800&display=swap');
+
+/* ---------------------------------------------------
+RESET
+--------------------------------------------------- */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------
+VARIABLES
+--------------------------------------------------- */
+:root {
+  /* Color */
+  --white: #ffffff;
+  --romance: #f0efed;
+  --seashell: #f8f6f5;
+  --charcoal: #464646;
+  --oxford-blue: #263238;
+  --outrageous-orange: #f36633;
+  --red: #ff0000;
+
+  /* Font */
+  --sans-serif: Arial, Helvetica, sans-serif;
+  --title: 'Wix Madefor Display', sans-serif;
+}
+
+
+/* ---------------------------------------------------
+BODY
+--------------------------------------------------- */
+body {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1.125rem;
+  font-family: var(--sans-serif);
+  background-color: var(--seashell);
+}
+
+
+/* ---------------------------------------------------
+MAIN
+--------------------------------------------------- */
+#banner {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: var(--white);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--title);
+  font-size: 1.125em;
+  color: var(--red);
+}
+
+article {
+  gap: 28px;
+  padding: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  color: var(--oxford-blue);
+}
+
+#side-by-side-paragraphs {
+  gap: 28px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#side-by-side-button {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#participathivos-img {
+  margin: 0 auto 28px;
+  display: block;
+}
+
+#social-media {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ---------------------------------------------------
+FOOTER
+--------------------------------------------------- */
+footer {
+  gap: 26px;
+  padding: 30px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: var(--charcoal);
+  background-color: var(--romance);
+}
+
+footer > p {
+  text-align: center;
+  line-height: 20px;
+}
+
+footer a {
+  color: var(--outrageous-orange);
+}
+
+#customer-service-phone {
+  width: 82px;
+}
+
+#contact-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#latest-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#address-container {
+  width: 100%;
+  margin: 18px 0 16px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 0.625rem;
+}
+
+#address-container address {
+  display: inline;
+}
+
+#unsubscribe {
+  width: 100%;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+#unsubscribe > a {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------
+MEDIA QUERIES
+--------------------------------------------------- */
+@media only screen and (min-width: 551px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 619px) {
+  #side-by-side-paragraphs p {
+    max-width: 258px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #side-by-side-button {
+    gap: 145px;
+  }
+
+  #latest-images {
+    justify-content: space-between;
+  }
+
+  #address-container {  
+    margin: 0;
+    width: 92%;
+    position: absolute;
+    left: 50px;
+  }
+}
+
+@media only screen and (min-width: 710px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

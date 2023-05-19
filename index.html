@@ -6,6 +6,14 @@
       http-equiv="X-UA-Compatible"
       content="IE=edge"
     >
+    <meta 
+      name="author"
+      content="Leandro Medvedev"
+    >
+    <meta
+      name="description"
+      content="Quinta jornada Participathivos."  
+    >
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -18,6 +26,7 @@
       href="assets/img-6.ico"
       type="image/x-icon"
     >
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <a
@@ -26,34 +35,39 @@
       rel="external"
     >
       <img
+        id="banner"
         src="assets/img-2.png"
         alt="Participathivos campaign banner"
-        title="Banner da campanha Participathivos"
       >
     </a>
     <main>
       <article>
-      <h1>Agradecemos a Sua Participação!</h1>
+        <h1>Agradecemos a Sua Participação!</h1>
 
         <p>Olá, {{Nome}}!</p>
         <p>
           Esperamos que tenha curtido o nosso
-          <strong>evento online!</strong> Ficamos felizes de contar com você em
+          <strong>evento online!</strong> <br> 
+          Ficamos felizes de contar com você em
           mais uma Jornada Participathivos, um evento com muita informação para
           compreender como ainda podemos, juntos, transformar o cenário de HIV
           no Brasil!
         </p>
-        <div>
+
+        <div id="side-by-side-paragraphs">
           <p>
             Preparamos tudo com muito carinho e gostaríamos de saber como foi
-            sua experiência! <strong>Bora responder algumas perguntas</strong>?
+            sua experiência! <br> 
+            <strong>Bora responder algumas perguntas?</strong>
           </p>
           <p>
-            <strong>Não conseguiu assistir?</strong> Corre no portal para
+            <strong>Não conseguiu assistir?</strong> <br>
+            Corre no portal para
             conferir a gravação do evento na íntegra e não ficar de fora!
           </p>
         </div>
-        <div>
+
+        <div id="side-by-side-button">
           <a
             href="https://www.participathivosgsk.com.br/"
             target="_blank"
@@ -76,7 +90,9 @@
           </a>
         </div>
       </article>
+      
       <img
+        id="participathivos-img"
         src="assets/img-9.png"
         alt="participathivos social media"
       >
@@ -141,44 +157,50 @@
         GSK\ViiVHealthcare.
       </p>
       <span>NP-BR-HVX-EML-220018 - DEZ/2022</span>
-      <div>
-        <img
+
+      <div id="contact-container">
+        <div id="latest-images">
+          <img
           src="assets/img-1.png"
           alt="GSK and ViiV Helthcare logos"
-        >
-        <div>
+          >
+          <a
+            href="https://www.br.gsk.com/pt-br/fale-conosco"
+            target="_blank"
+            rel="external"
+          >
+            <img
+              id="customer-service-phone"
+              src="assets/img-12.png"
+              alt="Customer service phone"
+            >
+          </a>
+        </div>
+
+        <div id="address-container">
           <a
             href="https://gskpro.com/pt-br/"
             target="_blank"
             rel="external"
             >www.gsk.com.br</a
-          >
-          <span>GraxoSmithKline Brasil Ltda.</span>
+          > <br>
+          <span>GraxoSmithKline Brasil Ltda.</span> <br>
           <address>
             Estrada dos Bandeirantes, 8464, - Rio de Janeiro - RJ<br>
             CEP 22783-110
           </address>
           <span> | CNPJ 33247743/0001-10</span>
-          <p>
-            Caso não deseje mais receber e-mails,
-            <a
-              href="https://www.participathivosgsk.com.br/acesso"
-              target="_blank"
-              rel="external"
-              >clique aqui</a
-            >.
-          </p>
+          
         </div>
-        <a
-          href="https://www.br.gsk.com/pt-br/fale-conosco"
-          target="_blank"
-          rel="external"
-        >
-          <img
-            src="assets/img-12.png"
-            alt="Customer service phone"
-          >
-        </a>
+        <p id="unsubscribe">
+          Caso não deseje mais receber e-mails,
+          <a
+            href="https://www.participathivosgsk.com.br/acesso"
+            target="_blank"
+            rel="external"
+            >clique aqui</a
+          >.
+        </p>
       </div>
     </footer>
   </body>
